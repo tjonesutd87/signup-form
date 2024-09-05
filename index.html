@@ -4,46 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up!</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="splash">
-        <div class="splash-banner">
-            <img src="images/odin-lined.png" alt="Lineart Odin Project Logo">
-            <h1 class="title">ODIN</h1>
+    <div class="wrapper">
+        <div class="splash">
+            <div class="splash-banner">
+                <img class="logo" src="images/odin-lined.png" alt="Lineart Odin Project Logo">
+                <h1 class="title">ODIN</h1>
+            </div>
+            <div>
+                <p>
+                    Photo by <a href="https://unsplash.com/@24ameer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ameer Basheer</a> on <a href="https://unsplash.com/photos/blue-and-red-wallpaper-gV6taBJuBTk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </div>
         </div>
-        <p>
-            Photo by <a href="https://unsplash.com/@anniespratt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Annie Spratt</a> on <a href="https://unsplash.com/photos/selective-photography-of-dried-leaf-epcsn8Ed8kY?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-        </p>
-    </div>
-    <div>
-        <div>
-            <p class="hero-text">
-                This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams
-            </p>
+        <div class="main">
+            <div>
+                <p class="hero-text">
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    Sign up <em>now</em> to get started.
+                </p>
+                <p class="hero-text">You <em>know</em> you want to.</p>
+            </div>
+            <div class="form" id="signup-form" action="">
+                <h2>Let's do this!</h2>
+                <form>
+                    <div>
+                        <ul>
+                            <li>
+                                <div>
+                                    <label for="first-name">FIRST NAME</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="first-name" id="first-name" placeholder="Thor" required />
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="email">EMAIL</label>
+                                </div>
+                                <div>
+                                    <input type="email" name="email" id="email" placeholder="thor@asgard.com" required />
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="pwd">PASSWORD</label>
+                                </div>
+                                <div>
+                                    <input type="password" id="pwd" name="pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div>
+                                    <label for="last-name">LAST NAME</label>
+                                </div>
+                                <div>
+                                    <input type="text" name="last-name" id="last-name" placeholder="Odinson" required>
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="phone">PHONE NUMBER</label>
+                                </div>
+                                <div>
+                                    <input type="tel" name="phone" id="phone" placeholder="111-867-5309" pattern="(\(\d{3}\)\d{3}(.|-)\d{4})|(\d{3}(.|-)\d{3}(.|-)\d{4})">
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="pwd-confirm">CONFIRM PASSWORD</label>
+                                </div>
+                                <div>
+                                    <input type="password" name="pwd-confirm" id="pwd-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
+                                </div>
+                                <div>
+                                    <span class="error" aria-live="polite"></span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                
+            </div>
+            <div class="footer">
+                <button type="submit" form="signup-form">Create Account</button>
+                <p>Already have an account? <a href=index.html>Log in</a></p>
+            </div>
+        </form>
         </div>
-        <div class="form">
-            <h2>Let's do this!</h2>
-            <form>
-                <ul>
-                    <li>
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" name="first-name" id="first-name" placeholder="Thor"/>
-                    </li>
-                    <li><label for="email">EMAIL</label><input type="email" name="email" id="email" placeholder="thor@asgard.com" required="required"></li>
-                    <li><label for="pwd">PASSWORD</label><input type="password" id="pwd" name="pwd"  required="required"></li>
-                    <ul>
-                        <li><label for="last-name">LAST NAME</label><input type="text" name="last-name" id="last-name" placeholder="Odinson" required="required"></li>
-                        <li><label for="phone">PHONE NUMBER</label><input type="tel" name="phone" id="phone" placeholder="111-867-5309"></li>
-                        <li><label for="pwd-confirm">CONFIRM PASSWORD</label><input type="password" name="pwd-confirm" id="pwd-confirm" required="required"></li>
-                    </ul>
-                </ul>
-            </form>
-        </div>
-        <div>
-            <button>Create Account</button>
-            <p>Already have an account? <a href=index.html>Log in</a></p>
-        </div>
-
     </div>
 </body>
 </html>

@@ -1,8 +1,204 @@
 @font-face {
     font-family: 'balgrufregular';
-    src: url('balgruf-webfont.woff2') format('woff2'),
-         url('balgruf-webfont.woff') format('woff');
+    src: url('fonts/balgruf-webfont.woff2') format('woff2'),
+         url('fonts/balgruf-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
+}
+
+@font-face {
+    font-family: 'bpreplay';
+    src: url('fonts/bpreplay-webfont.woff2') format('woff2'),
+         url('fonts/bpreplay-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bpreplay';
+    src: url('fonts/bpreplayitalics-webfont.woff2') format('woff2'),
+         url('fonts/bpreplayitalics-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+
+}
+
+@font-face {
+    font-family: 'bpreplay';
+    src: url('fonts/bpreplaybold-webfont.woff2') format('woff2'),
+         url('fonts/bpreplaybold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body, .wrapper, .splash {
+    height: 100%;
+}
+
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto;
+    width: 70%;
+    background-color: #fff;
+}
+
+body {
+    padding: 0;
+    font: 1em 'bpreplay', sans-serif;
+    background: #22162D;
+}
+
+.splash{
+    background: #000 url(images/canyon2.jpg) no-repeat center;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 40%;
+    padding-bottom: 15px;
+}
+
+.splash p {
+    color: #fff;
+    font-size: .8em;
+}
+
+.splash a {
+    color: #fff;
+}
+
+.splash-banner{
+    height: 125px;
+    margin: auto 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+    color: #fff;
+    font: 5em 'balgrufregular', serif;
+    display: block;
+    margin: auto 0;
+}
+
+.logo {
+    width: 80px;
+    height: 100px;
+    display:block;
+    margin: auto 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    gap: 20px;
+    background-color: #eee;
+}
+
+.hero-text {
+    font: 1.5em 'bpreplay', sans-serif;
+    padding: 10px 40px;
+}
+
+.form ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+form div {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    margin: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0;
+    padding: 25px 40px;
+    width: 100%;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18); 
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.18);
+    gap: 20px;
+}
+
+.form input {
+    width: 250px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.form label {
+    font-size: .8em;
+}
+
+.footer {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 40px;
+    gap: 20px;
+}
+
+.footer button {
+    background-color: #655DC8;
+    border: none;
+    height: 40px;
+    width: 175px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.footer button:active {
+    background-color: #343067;
+    color:#655DC8;
+}
+
+.footer button:hover {
+    cursor: pointer;
+}
+
+.footer a {
+    font-weight: bold;
+    color: #655DC8;
+}
+
+input:invalid {
+    border: 1px red solid;
 }
