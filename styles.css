@@ -202,3 +202,11 @@ form div {
 input:invalid {
     border: 1px red solid;
 }
+
+span.error {
+    color: red;
+    font-size: .6em;
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 5px;
+}

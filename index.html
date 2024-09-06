@@ -40,7 +40,7 @@
                                     <input type="text" name="first-name" id="first-name" placeholder="Thor" required />
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="first-name-error" aria-live="polite"></span>
                                 </div>
                             </li>
                             <li>
@@ -51,7 +51,7 @@
                                     <input type="email" name="email" id="email" placeholder="thor@asgard.com" required />
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="email-error" aria-live="polite"></span>
                                 </div>
                             </li>
                             <li>
@@ -62,7 +62,7 @@
                                     <input type="password" id="pwd" name="pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="pwd-error" aria-live="polite"></span>
                                 </div>
                             </li>
                         </ul>
@@ -75,7 +75,7 @@
                                     <input type="text" name="last-name" id="last-name" placeholder="Odinson" required>
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="last-name-error" aria-live="polite"></span>
                                 </div>
                             </li>
                             <li>
@@ -86,7 +86,7 @@
                                     <input type="tel" name="phone" id="phone" placeholder="111-867-5309" pattern="(\(\d{3}\)\d{3}(.|-)\d{4})|(\d{3}(.|-)\d{3}(.|-)\d{4})">
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="phone-error" aria-live="polite"></span>
                                 </div>
                             </li>
                             <li>
@@ -97,7 +97,7 @@
                                     <input type="password" name="pwd-confirm" id="pwd-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                                 </div>
                                 <div>
-                                    <span class="error" aria-live="polite"></span>
+                                    <span class="error" id="confirm-error" aria-live="polite"></span>
                                 </div>
                             </li>
                         </ul>
@@ -112,4 +112,5 @@
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
