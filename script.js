@@ -20,7 +20,7 @@ var pwdRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{
 
 var submitBtn = document.getElementById("signup-submit");
 
-
+console.log("hello world!");
 
 email.addEventListener("input", () =>{
     if (email.validity.valid) {
