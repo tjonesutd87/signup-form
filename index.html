@@ -27,7 +27,7 @@
                 </p>
                 <p class="hero-text">You <em>know</em> you want to.</p>
             </div>
-            <div class="form" id="signup-form" action="">
+            <div class="form" id="signup-form" action="/my-handling-form-page" method="post">
                 <h2>Let's do this!</h2>
                 <form>
                     <div>
@@ -48,7 +48,7 @@
                                     <label for="email">EMAIL</label>
                                 </div>
                                 <div>
-                                    <input type="email" name="email" id="email" placeholder="thor@asgard.com" required />
+                                    <input type="email" name="email" id="email" placeholder="thor@asgard.com" minlength="5" required />
                                 </div>
                                 <div>
                                     <span class="error" id="email-error" aria-live="polite"></span>
@@ -62,7 +62,7 @@
                                     <input type="password" id="pwd" name="pwd" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                                 </div>
                                 <div>
-                                    <span class="error" id="pwd-error" aria-live="polite"></span>
+                                    <p class="error" id="pwd-error" aria-live="polite"></p>
                                 </div>
                             </li>
                         </ul>
@@ -83,7 +83,7 @@
                                     <label for="phone">PHONE NUMBER</label>
                                 </div>
                                 <div>
-                                    <input type="tel" name="phone" id="phone" placeholder="111-867-5309" pattern="(\(\d{3}\)\d{3}(.|-)\d{4})|(\d{3}(.|-)\d{3}(.|-)\d{4})">
+                                    <input type="tel" name="phone" id="phone" placeholder="111-867-5309" pattern="((\(\d{3}\)\d{3}(.|-)\d{4})|(\d{3}(.|-)\d{3}(.|-)\d{4}))|(\d{10})">
                                 </div>
                                 <div>
                                     <span class="error" id="phone-error" aria-live="polite"></span>
@@ -97,7 +97,7 @@
                                     <input type="password" name="pwd-confirm" id="pwd-confirm" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$" required>
                                 </div>
                                 <div>
-                                    <span class="error" id="confirm-error" aria-live="polite"></span>
+                                    <span class="error" id="pwd-confirm-error" aria-live="polite"></span>
                                 </div>
                             </li>
                         </ul>
@@ -105,7 +105,7 @@
                 
             </div>
             <div class="footer">
-                <button type="submit" form="signup-form">Create Account</button>
+                <button type="submit" value="submit" form="signup-form" id="signup-submit">Create Account</button>
                 <p>Already have an account? <a href=index.html>Log in</a></p>
             </div>
         </form>
